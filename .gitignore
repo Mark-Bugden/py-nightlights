@@ -9,6 +9,9 @@ __pycache__/
 .env
 .venv/
 
+# VSCode settings
+.vscode/
+
 # Data
 data/outputs/*
 data/processed/*
