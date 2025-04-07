@@ -1,0 +1,15 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+
+# Data
+data/outputs/*
+data/processed/*
+data/raw/*

@@ -1,0 +1,36 @@
+[project]
+name = "py-nightlights"
+version = "0.1.0"
+description = "Satellite insights into urban life after sunset"
+authors = [
+    {name = "Mark Bugden"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "numpy (>=2.2.4,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "geopandas (>=1.0.1,<2.0.0)",
+    "rasterio (>=1.4.3,<2.0.0)",
+    "xarray (>=2025.3.1,<2026.0.0)",
+    "cartopy (>=0.24.1,<0.25.0)",
+    "imageio (>=2.37.0,<3.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [
+  { include = "py_nightlights", from = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+pre-commit = "^4.2.0"
+
